@@ -1,11 +1,11 @@
 ﻿using AppCopaHAS.Models;
 using AppCopaHAS.Services;
+using Microsoft.Maui.Controls;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
 using System.Windows.Input;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace AppCopaHAS.ViewModels.Jogos
 {

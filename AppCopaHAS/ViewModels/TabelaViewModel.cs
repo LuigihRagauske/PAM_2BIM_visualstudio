@@ -1,9 +1,11 @@
 ﻿using AppCopaHAS.Services;
+using AppCopaHAS.Models.DTOs; // Adicionado para reconhecer o JogoDTO
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
-using static System.Net.Mime.MediaTypeNames;
+using System.Threading.Tasks; // Adicionado para reconhecer o Task
+using Microsoft.Maui.Controls; // Adicionado para o Application.Current funcionar
 
 namespace AppCopaHAS.ViewModels
 {
@@ -12,7 +14,8 @@ namespace AppCopaHAS.ViewModels
         JogoService _jogoService;
 
         public ObservableCollection<JogoDTO> Jogos { get; set; }
-        public TabelaViewModel() 
+
+        public TabelaViewModel()
         {
             _jogoService = new JogoService();
             Jogos = new ObservableCollection<JogoDTO>();
